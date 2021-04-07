@@ -5,3 +5,10 @@ C:\Users\lawliet\source\repos\ConsoleLibrary\obj\Debug\ConsoleLibrary.csprojAsse
 C:\Users\lawliet\source\repos\ConsoleLibrary\obj\Debug\ConsoleLibrary.csproj.CoreCompileInputs.cache
 C:\Users\lawliet\source\repos\ConsoleLibrary\obj\Debug\ConsoleLibrary.exe
 C:\Users\lawliet\source\repos\ConsoleLibrary\obj\Debug\ConsoleLibrary.pdb
+C:\Users\lawliet\source\repos\AppDevConsoleLibrary\ConsoleLibrary\bin\Debug\ConsoleLibrary.exe.config
+C:\Users\lawliet\source\repos\AppDevConsoleLibrary\ConsoleLibrary\bin\Debug\ConsoleLibrary.exe
+C:\Users\lawliet\source\repos\AppDevConsoleLibrary\ConsoleLibrary\bin\Debug\ConsoleLibrary.pdb
+C:\Users\lawliet\source\repos\AppDevConsoleLibrary\ConsoleLibrary\obj\Debug\ConsoleLibrary.csprojAssemblyReference.cache
+C:\Users\lawliet\source\repos\AppDevConsoleLibrary\ConsoleLibrary\obj\Debug\ConsoleLibrary.csproj.CoreCompileInputs.cache
+C:\Users\lawliet\source\repos\AppDevConsoleLibrary\ConsoleLibrary\obj\Debug\ConsoleLibrary.exe
+C:\Users\lawliet\source\repos\AppDevConsoleLibrary\ConsoleLibrary\obj\Debug\ConsoleLibrary.pdb
