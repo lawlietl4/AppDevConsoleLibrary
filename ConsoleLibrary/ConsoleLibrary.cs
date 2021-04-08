@@ -79,7 +79,7 @@ namespace ConsoleLibrary
             items.Append("exit");
             foreach (string item in items)
             {
-                if (item == "Exit")
+                if (item == "Exit"|item == "Quit")
                 {
                     i = 0;
                     Console.WriteLine(i + " - " + item);
