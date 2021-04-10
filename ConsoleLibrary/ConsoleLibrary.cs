@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,16 +12,16 @@ namespace ConsoleLibrary
 
         public int GetConsoleInt(string message, int min, int max)
         {
-            decimal test = 0;
             Console.WriteLine(message);
-            decimal input = Convert.ToDecimal(Console.ReadLine());
-            if (ValueType.Equals(input, test) & (input < min | input > max))
+            int input = Convert.ToInt32(Console.ReadLine());
+            if (input > min || input < max)
             {
                 Console.WriteLine("value accepted!");
             }
             else
             {
                 Console.WriteLine("The value was not valid in the given context, application now ending");
+                Console.ReadLine();
                 Environment.Exit(0);
             }
             return Convert.ToInt32(input);
@@ -75,11 +76,12 @@ namespace ConsoleLibrary
         }
         public int GetConsoleMenu(string[] items)
         {
+            int ret = 0;
             int i = 0;
             items.Append("exit");
             foreach (string item in items)
             {
-                if (item == "Exit"|item == "Quit")
+                if (item == "Exit"||item == "Quit")
                 {
                     i = 0;
                     Console.WriteLine(i + " - " + item);
@@ -91,8 +93,32 @@ namespace ConsoleLibrary
                 }
             }
             Console.WriteLine("Please enter what you would like to do...");
-            int ret = Convert.ToInt32(Console.ReadLine());
+            try
+            {
+                ret = Convert.ToInt32(Console.ReadLine());
+                
+            }
+            catch (FormatException fe)
+            {
+                Console.WriteLine(fe.Message);
+            }
             return ret;
+        }
+        public int[] GetCustomConsoleInt(string message)
+        {
+            int[] values = { };
+            Console.WriteLine(message);
+            Console.Write("Minimum: ");
+            int min = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Maximum: ");
+            int max = Convert.ToInt32(Console.ReadLine());
+            values.Append(min);
+            values.Append(max);
+            return values;
+        }
+        public void FileAsync(string outcomes)
+        {
+            File.WriteAllText("endFile.txt",outcomes);
         }
     }
 }
